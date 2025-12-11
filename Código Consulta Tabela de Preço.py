@@ -17,7 +17,7 @@ from datetime import datetime, timedelta
 
 # config inicial da pág
 st.set_page_config(page_title="Consulta Tabelas de Preço", layout="wide")
-st.title("Consulta Tabelas de Preço")
+st.title("Consulta Tabelas de Preço V2")
 
 # obter tabelas de preço
 @st.cache_data
@@ -158,3 +158,4 @@ if not df_tabelas_preco.empty:
 
 else:
     st.warning("Nenhuma tabela encontrada na API.")
+
